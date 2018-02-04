@@ -1,0 +1,37 @@
+{
+    "name": "lukaswhite/laravel-geonames",
+    "description": "Helps integrate Geonames into a Laravel application",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/lukaswhite/geonames-php"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Lukas White",
+            "email": "hello@lukaswhite.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/config": "~5.5.0",
+        "illuminate/database": "~5.5.0",
+        "illuminate/support": "~5.5.0",
+        "lukaswhite/geonames-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lukaswhite\\LaravelGeonames\\": "src/Lukaswhite/LaravelGeonames"
+        }
+    },
+   "extra": {
+        "laravel": {
+            "providers": [
+                "Lukaswhite\\LaravelGeonames\\LaravelGeonamesServiceProvider"
+            ]
+        }
+    }
+}
